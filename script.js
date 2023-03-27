@@ -185,21 +185,20 @@ if(units <= 50){
     bill = units * 0.5
 }
 else if ( units <= 150){
-    bill = (50 * 0.5) + (units - 50) * 0.75
+    bill = 25 + (units - 50) * 0.75
 }
 else if ( units <= 250){
-    bill = (50 * 0.5) + (100 * 0.75) + (units - 150 ) * 1.20
+    bill = 100 + (units - 150 ) * 1.20
 }
 else if (units > 250 ){
-    bill = 50 * 0.5 + 100* 0.75 + 150 * 1.20 + (units - 250) * 1.50
+    bill = 220 + (units - 250) * 1.50
+    bill = bill * 0.2
 }
 else(
     console.log("Give correct input")
 )
 
-if(units > 250){
-    bill = bill + bill * 0.2
-}
+
 console.log("The bill you will pay is RS:",bill)
 
 
