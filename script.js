@@ -192,7 +192,7 @@ else if ( units <= 250){
 }
 else if (units > 250 ){
     bill = 220 + (units - 250) * 1.50
-    bill = bill * 0.2
+    bill = bill + bill * 0.2
 }
 else(
     console.log("Give correct input")
